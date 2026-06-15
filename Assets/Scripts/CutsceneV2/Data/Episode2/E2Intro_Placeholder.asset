@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16b4fc8c2e354cb9a052b5e2daab460d, type: 3}
+  m_Name: E2Intro_Placeholder
+  m_EditorClassIdentifier: 
+  <CutsceneId>k__BackingField: 
+  <Frames>k__BackingField:
+  - {fileID: 11400000, guid: 81167b5a4a63a6748a59ab5382c621a4, type: 2}

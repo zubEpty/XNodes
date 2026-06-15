@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16b4fc8c2e354cb9a052b5e2daab460d, type: 3}
+  m_Name: E1_Intro_Cutscene
+  m_EditorClassIdentifier: 
+  <CutsceneId>k__BackingField: Episode_1_Intro
+  <Frames>k__BackingField:
+  - {fileID: 11400000, guid: cbddfc7c447cb1a4783cafc58a995d5f, type: 2}
+  - {fileID: 11400000, guid: 173b75cc9bbe4a34ab1181f7f6d49f11, type: 2}
+  - {fileID: 11400000, guid: 4d367838c50017f42ab4f0710f2c65b4, type: 2}
+  - {fileID: 11400000, guid: 6231b218c1c236640a7863b3ab98d5db, type: 2}
+  - {fileID: 11400000, guid: 1c212f0b610667448a1d7d2d15071ca8, type: 2}
+  - {fileID: 11400000, guid: f9dfee3d0947d5145972911c22d6fc82, type: 2}
+  - {fileID: 11400000, guid: 0102efdda56ebfa42a795f63c409f2df, type: 2}
+  - {fileID: 11400000, guid: b73127576f4e768418dce17bc935f1c1, type: 2}
+  - {fileID: 11400000, guid: f23fe785e562afb42b945a6ac21d3edf, type: 2}

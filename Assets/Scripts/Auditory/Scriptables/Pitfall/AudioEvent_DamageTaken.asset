@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d48341cdbd9b547b0fac6a5002cba5, type: 3}
+  m_Name: AudioEvent_DamageTaken
+  m_EditorClassIdentifier: Assembly-CSharp::Outsiders.Auditory.AudioEventSO
+  Channel: 1
+  Clips:
+  - {fileID: 8300000, guid: ccd5177cf966331478ff7b2d573bd296, type: 3}
+  - {fileID: 8300000, guid: ee9a4b282ae16b240a49198bd0ca5db5, type: 3}
+  - {fileID: 8300000, guid: 2fb5fc269a4a19f41b85b78862cfee5c, type: 3}
+  - {fileID: 8300000, guid: a55ccfe9e2bbd9042afa2d545a7d5618, type: 3}
+  - {fileID: 8300000, guid: 2af1bd39679e9ea47a9ca04b1d3d1b50, type: 3}
+  Volume: 0.45
+  PitchMin: 1
+  PitchMax: 1
+  RandomizePitch: 0
+  Loop: 0
+  SpatialBlend: 0
+  MaxDist: 50
+  StreamFromDisk: 0
+  Priority: 0
