@@ -169,7 +169,7 @@ MonoBehaviour:
         m_Calls: []
   highlightRenderers:
   - {fileID: 1946506047}
-  currentNodeEmissionColor: {r: 0.0990566, g: 1, b: 0.71345717, a: 1}
+  currentNodeEmissionColor: {r: 1, g: 0.09803922, b: 0.9764706, a: 1}
   currentNodeEmissionIntensity: 3
   eventConnectionDirection: 0
   eventConnectionTarget: {fileID: 0}
@@ -658,7 +658,7 @@ MonoBehaviour:
         m_Calls: []
   highlightRenderers:
   - {fileID: 1128583605}
-  currentNodeEmissionColor: {r: 0.0990566, g: 1, b: 0.71345717, a: 1}
+  currentNodeEmissionColor: {r: 1, g: 0.09803922, b: 0.9764706, a: 1}
   currentNodeEmissionIntensity: 3
   eventConnectionDirection: 0
   eventConnectionTarget: {fileID: 0}
@@ -919,7 +919,7 @@ MonoBehaviour:
         m_Calls: []
   highlightRenderers:
   - {fileID: 694119904}
-  currentNodeEmissionColor: {r: 0.0990566, g: 1, b: 0.71345717, a: 1}
+  currentNodeEmissionColor: {r: 1, g: 0.09803922, b: 0.9764706, a: 1}
   currentNodeEmissionIntensity: 3
   eventConnectionDirection: 0
   eventConnectionTarget: {fileID: 0}
@@ -1232,7 +1232,7 @@ MonoBehaviour:
         m_Calls: []
   highlightRenderers:
   - {fileID: 1282661525}
-  currentNodeEmissionColor: {r: 0.0990566, g: 1, b: 0.71345717, a: 1}
+  currentNodeEmissionColor: {r: 1, g: 0.09803922, b: 0.9764706, a: 1}
   currentNodeEmissionIntensity: 3
   eventConnectionDirection: 0
   eventConnectionTarget: {fileID: 0}
@@ -2101,7 +2101,7 @@ MonoBehaviour:
         m_Calls: []
   highlightRenderers:
   - {fileID: 1563832417}
-  currentNodeEmissionColor: {r: 0.0990566, g: 1, b: 0.71345717, a: 1}
+  currentNodeEmissionColor: {r: 1, g: 0.09803922, b: 0.9764706, a: 1}
   currentNodeEmissionIntensity: 3
   eventConnectionDirection: 0
   eventConnectionTarget: {fileID: 0}
@@ -2307,7 +2307,7 @@ MonoBehaviour:
         m_Calls: []
   highlightRenderers:
   - {fileID: 1998407530}
-  currentNodeEmissionColor: {r: 0.0990566, g: 1, b: 0.71345717, a: 1}
+  currentNodeEmissionColor: {r: 1, g: 0.09803922, b: 0.9764706, a: 1}
   currentNodeEmissionIntensity: 3
   eventConnectionDirection: 0
   eventConnectionTarget: {fileID: 0}
@@ -3335,7 +3335,7 @@ MonoBehaviour:
         m_Calls: []
   highlightRenderers:
   - {fileID: 539643330}
-  currentNodeEmissionColor: {r: 0.0990566, g: 1, b: 0.71345717, a: 1}
+  currentNodeEmissionColor: {r: 1, g: 0.09803922, b: 0.9764706, a: 1}
   currentNodeEmissionIntensity: 3
   eventConnectionDirection: 0
   eventConnectionTarget: {fileID: 0}
@@ -3399,7 +3399,7 @@ MonoBehaviour:
         m_Calls: []
   highlightRenderers:
   - {fileID: 1675601525}
-  currentNodeEmissionColor: {r: 0.0990566, g: 1, b: 0.71345717, a: 1}
+  currentNodeEmissionColor: {r: 1, g: 0.09803922, b: 0.9764706, a: 1}
   currentNodeEmissionIntensity: 3
   eventConnectionDirection: 0
   eventConnectionTarget: {fileID: 0}
@@ -4578,7 +4578,7 @@ MonoBehaviour:
         m_Calls: []
   highlightRenderers:
   - {fileID: 1319328517}
-  currentNodeEmissionColor: {r: 0.0990566, g: 1, b: 0.71345717, a: 1}
+  currentNodeEmissionColor: {r: 1, g: 0.09803922, b: 0.9764706, a: 1}
   currentNodeEmissionIntensity: 3
   eventConnectionDirection: 0
   eventConnectionTarget: {fileID: 0}
@@ -7510,7 +7510,7 @@ MonoBehaviour:
         m_Calls: []
   highlightRenderers:
   - {fileID: 60201999}
-  currentNodeEmissionColor: {r: 0.0990566, g: 1, b: 0.71345717, a: 1}
+  currentNodeEmissionColor: {r: 1, g: 0.09803922, b: 0.9764706, a: 1}
   currentNodeEmissionIntensity: 3
   eventConnectionDirection: 0
   eventConnectionTarget: {fileID: 0}
