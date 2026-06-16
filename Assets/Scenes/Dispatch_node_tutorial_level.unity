@@ -267,7 +267,6 @@ GameObject:
   - component: {fileID: 58419553}
   - component: {fileID: 58419556}
   - component: {fileID: 58419555}
-  - component: {fileID: 58419559}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -394,47 +393,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58419552}
   m_CullTransparentMesh: 1
---- !u!114 &58419559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 58419552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b6e99664a9d40b6840bff112c491fdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: BanglaText::BanglaText.HBTextMeshPro
-  fontFilePath: Assets/Fonts/Bangla/NotoSansBengali-VariableFont_wdth,wght.ttf
-  fontAsset: {fileID: 0}
-  bengaliText: 
-  autoDetectBengali: 1
-  forceHarfBuzz: 0
-  fontSize: 28
-  enableAutoSizing: 0
-  fontSizeMin: 18
-  fontSizeMax: 72
-  fontStyle: 1
-  textColor: {r: 0.2509804, g: 0.05490196, b: 0.05882353, a: 1}
-  horizontalAlignment: 1
-  verticalAlignment: 1
-  wrappingMode: 1
-  overflowMode: 0
-  lineSpacingFactor: 0
-  characterSpacing: 0
-  wordSpacing: 0
-  paragraphSpacing: 0
-  margin: {x: 0, y: 0, z: 0, w: 0}
-  padding: {x: 0, y: 0, z: 0, w: 0}
-  enableOutline: 0
-  outlineColor: {r: 0, g: 0, b: 0, a: 1}
-  outlineWidth: 0
-  enableShadow: 0
-  shadowColor: {r: 0, g: 0, b: 0, a: 0.5}
-  shadowOffset: {x: 2, y: -2}
-  shadowSoftness: 3
-  layoutSmoothSpeed: 30
 --- !u!1 &99358017
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,7 +949,6 @@ GameObject:
   - component: {fileID: 259221752}
   - component: {fileID: 259221754}
   - component: {fileID: 259221753}
-  - component: {fileID: 259221757}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1118,47 +1075,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259221751}
   m_CullTransparentMesh: 1
---- !u!114 &259221757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 259221751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b6e99664a9d40b6840bff112c491fdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: BanglaText::BanglaText.HBTextMeshPro
-  fontFilePath: Assets/Fonts/Bangla/NotoSansBengali-VariableFont_wdth,wght.ttf
-  fontAsset: {fileID: 0}
-  bengaliText: 
-  autoDetectBengali: 1
-  forceHarfBuzz: 0
-  fontSize: 28
-  enableAutoSizing: 0
-  fontSizeMin: 18
-  fontSizeMax: 72
-  fontStyle: 1
-  textColor: {r: 0.2509804, g: 0.05490196, b: 0.05882353, a: 1}
-  horizontalAlignment: 1
-  verticalAlignment: 1
-  wrappingMode: 1
-  overflowMode: 0
-  lineSpacingFactor: 0
-  characterSpacing: 0
-  wordSpacing: 0
-  paragraphSpacing: 0
-  margin: {x: 0, y: 0, z: 0, w: 0}
-  padding: {x: 0, y: 0, z: 0, w: 0}
-  enableOutline: 0
-  outlineColor: {r: 0, g: 0, b: 0, a: 1}
-  outlineWidth: 0
-  enableShadow: 0
-  shadowColor: {r: 0, g: 0, b: 0, a: 0.5}
-  shadowOffset: {x: 2, y: -2}
-  shadowSoftness: 3
-  layoutSmoothSpeed: 30
 --- !u!1 &270715149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,6 +1223,7 @@ GameObject:
   - component: {fileID: 271124719}
   - component: {fileID: 271124721}
   - component: {fileID: 271124720}
+  - component: {fileID: 271124722}
   m_Layer: 5
   m_Name: Step1
   m_TagString: Untagged
@@ -1374,6 +1291,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271124718}
   m_CullTransparentMesh: 1
+--- !u!114 &271124722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271124718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65a02714563aa64990bcf7a17f14f8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outsiders.SimpleTutorial.TutorialStep
+  _completionButton: {fileID: 0}
+  OnStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStepFinish:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 271124718}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1883855832}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &332577772
 GameObject:
   m_ObjectHideFlags: 0
@@ -2706,7 +2666,7 @@ GameObject:
   - component: {fileID: 640807982}
   - component: {fileID: 640807984}
   - component: {fileID: 640807983}
-  - component: {fileID: 640807981}
+  - component: {fileID: 640807985}
   m_Layer: 5
   m_Name: Step5
   m_TagString: Untagged
@@ -2714,62 +2674,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &640807981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 640807980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dd806b01d8892b47a627987ec801d76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _completionButton: {fileID: 338677367}
-  OnStepStart:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStepFinish:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Dispatch.Gameplay.DispatchNodeTutorialFlow, Assembly-CSharp
-        m_MethodName: RestrictPlayerMove
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 640807980}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1249585708}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  _isFinalStep: 0
 --- !u!224 &640807982
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2829,6 +2733,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640807980}
   m_CullTransparentMesh: 1
+--- !u!114 &640807985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640807980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65a02714563aa64990bcf7a17f14f8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outsiders.SimpleTutorial.TutorialStep
+  _completionButton: {fileID: 338677367}
+  OnStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStepFinish:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 640807980}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1249585708}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &658530390
 GameObject:
   m_ObjectHideFlags: 0
@@ -2840,7 +2787,7 @@ GameObject:
   - component: {fileID: 658530391}
   - component: {fileID: 658530394}
   - component: {fileID: 658530393}
-  - component: {fileID: 658530392}
+  - component: {fileID: 658530395}
   m_Layer: 5
   m_Name: Step3
   m_TagString: Untagged
@@ -2869,50 +2816,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0.00024414, y: -0.0001}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &658530392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658530390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dd806b01d8892b47a627987ec801d76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _completionButton: {fileID: 1276859693}
-  OnStepStart:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStepFinish:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 658530390}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1861529815}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  _isFinalStep: 0
 --- !u!114 &658530393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2951,6 +2854,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658530390}
   m_CullTransparentMesh: 1
+--- !u!114 &658530395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658530390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65a02714563aa64990bcf7a17f14f8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outsiders.SimpleTutorial.TutorialStep
+  _completionButton: {fileID: 1276859693}
+  OnStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStepFinish:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 658530390}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1861529815}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &671045273
 GameObject:
   m_ObjectHideFlags: 0
@@ -3104,7 +3050,6 @@ GameObject:
   - component: {fileID: 706000887}
   - component: {fileID: 706000889}
   - component: {fileID: 706000888}
-  - component: {fileID: 706000892}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -3231,47 +3176,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706000886}
   m_CullTransparentMesh: 1
---- !u!114 &706000892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706000886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b6e99664a9d40b6840bff112c491fdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: BanglaText::BanglaText.HBTextMeshPro
-  fontFilePath: Assets/Fonts/Bangla/NotoSansBengali-VariableFont_wdth,wght.ttf
-  fontAsset: {fileID: 0}
-  bengaliText: 
-  autoDetectBengali: 1
-  forceHarfBuzz: 0
-  fontSize: 28
-  enableAutoSizing: 0
-  fontSizeMin: 18
-  fontSizeMax: 72
-  fontStyle: 1
-  textColor: {r: 0.2509804, g: 0.05490196, b: 0.05882353, a: 1}
-  horizontalAlignment: 1
-  verticalAlignment: 1
-  wrappingMode: 1
-  overflowMode: 0
-  lineSpacingFactor: 0
-  characterSpacing: 0
-  wordSpacing: 0
-  paragraphSpacing: 0
-  margin: {x: 0, y: 0, z: 0, w: 0}
-  padding: {x: 0, y: 0, z: 0, w: 0}
-  enableOutline: 0
-  outlineColor: {r: 0, g: 0, b: 0, a: 1}
-  outlineWidth: 0
-  enableShadow: 0
-  shadowColor: {r: 0, g: 0, b: 0, a: 0.5}
-  shadowOffset: {x: 2, y: -2}
-  shadowSoftness: 3
-  layoutSmoothSpeed: 30
 --- !u!1 &747486707
 GameObject:
   m_ObjectHideFlags: 0
@@ -4114,10 +4018,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f22a76a2e29a99444a4b27d34f4c164a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dispatch.Gameplay.DispatchNodeTutorialFlow
-  swipeToLockedNodeStep: {fileID: 0}
-  tapGateButtonStep: {fileID: 0}
-  passwordNeedsKeyStep: {fileID: 0}
-  exitAndMoveToKeyStep: {fileID: 0}
+  swipeToLockedNodeStep: {fileID: 271124722}
+  tapGateButtonStep: {fileID: 1883855837}
+  passwordNeedsKeyStep: {fileID: 658530395}
+  exitAndMoveToKeyStep: {fileID: 1861529820}
   collectKeyStep: {fileID: 0}
   memorizePatternStep: {fileID: 0}
   finishGameStep: {fileID: 0}
@@ -4466,7 +4370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6013,7 +5917,6 @@ GameObject:
   - component: {fileID: 1407007153}
   - component: {fileID: 1407007155}
   - component: {fileID: 1407007154}
-  - component: {fileID: 1407007158}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -6140,47 +6043,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407007152}
   m_CullTransparentMesh: 1
---- !u!114 &1407007158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407007152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b6e99664a9d40b6840bff112c491fdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: BanglaText::BanglaText.HBTextMeshPro
-  fontFilePath: Assets/Fonts/Bangla/NotoSansBengali-VariableFont_wdth,wght.ttf
-  fontAsset: {fileID: 0}
-  bengaliText: 
-  autoDetectBengali: 1
-  forceHarfBuzz: 0
-  fontSize: 28
-  enableAutoSizing: 0
-  fontSizeMin: 18
-  fontSizeMax: 72
-  fontStyle: 1
-  textColor: {r: 0.2509804, g: 0.05490196, b: 0.05882353, a: 1}
-  horizontalAlignment: 1
-  verticalAlignment: 1
-  wrappingMode: 1
-  overflowMode: 0
-  lineSpacingFactor: 0
-  characterSpacing: 0
-  wordSpacing: 0
-  paragraphSpacing: 0
-  margin: {x: 0, y: 0, z: 0, w: 0}
-  padding: {x: 0, y: 0, z: 0, w: 0}
-  enableOutline: 0
-  outlineColor: {r: 0, g: 0, b: 0, a: 1}
-  outlineWidth: 0
-  enableShadow: 0
-  shadowColor: {r: 0, g: 0, b: 0, a: 0.5}
-  shadowOffset: {x: 2, y: -2}
-  shadowSoftness: 3
-  layoutSmoothSpeed: 30
 --- !u!1 &1416780843
 GameObject:
   m_ObjectHideFlags: 0
@@ -6536,7 +6398,6 @@ GameObject:
   - component: {fileID: 1489731158}
   - component: {fileID: 1489731160}
   - component: {fileID: 1489731159}
-  - component: {fileID: 1489731163}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -6663,47 +6524,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1489731157}
   m_CullTransparentMesh: 1
---- !u!114 &1489731163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1489731157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b6e99664a9d40b6840bff112c491fdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: BanglaText::BanglaText.HBTextMeshPro
-  fontFilePath: Assets/Fonts/Bangla/NotoSansBengali-VariableFont_wdth,wght.ttf
-  fontAsset: {fileID: 0}
-  bengaliText: 
-  autoDetectBengali: 1
-  forceHarfBuzz: 0
-  fontSize: 28
-  enableAutoSizing: 0
-  fontSizeMin: 18
-  fontSizeMax: 72
-  fontStyle: 1
-  textColor: {r: 0.2509804, g: 0.05490196, b: 0.05882353, a: 1}
-  horizontalAlignment: 1
-  verticalAlignment: 1
-  wrappingMode: 1
-  overflowMode: 0
-  lineSpacingFactor: 0
-  characterSpacing: 0
-  wordSpacing: 0
-  paragraphSpacing: 0
-  margin: {x: 0, y: 0, z: 0, w: 0}
-  padding: {x: 0, y: 0, z: 0, w: 0}
-  enableOutline: 0
-  outlineColor: {r: 0, g: 0, b: 0, a: 1}
-  outlineWidth: 0
-  enableShadow: 0
-  shadowColor: {r: 0, g: 0, b: 0, a: 0.5}
-  shadowOffset: {x: 2, y: -2}
-  shadowSoftness: 3
-  layoutSmoothSpeed: 30
 --- !u!1 &1527366778
 GameObject:
   m_ObjectHideFlags: 0
@@ -8482,7 +8302,7 @@ GameObject:
   - component: {fileID: 1861529817}
   - component: {fileID: 1861529819}
   - component: {fileID: 1861529818}
-  - component: {fileID: 1861529816}
+  - component: {fileID: 1861529820}
   m_Layer: 5
   m_Name: Step4
   m_TagString: Untagged
@@ -8490,62 +8310,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1861529816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1861529815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dd806b01d8892b47a627987ec801d76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _completionButton: {fileID: 1293244407}
-  OnStepStart:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStepFinish:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1861529815}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 640807980}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Dispatch.Gameplay.DispatchNodeTutorialFlow, Assembly-CSharp
-        m_MethodName: RestrictPlayerMove
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _isFinalStep: 0
 --- !u!224 &1861529817
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8605,6 +8369,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861529815}
   m_CullTransparentMesh: 1
+--- !u!114 &1861529820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861529815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65a02714563aa64990bcf7a17f14f8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outsiders.SimpleTutorial.TutorialStep
+  _completionButton: {fileID: 1293244407}
+  OnStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStepFinish:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1861529815}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 640807980}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1865931347
 GameObject:
   m_ObjectHideFlags: 0
@@ -8843,7 +8650,7 @@ GameObject:
   - component: {fileID: 1883855833}
   - component: {fileID: 1883855836}
   - component: {fileID: 1883855835}
-  - component: {fileID: 1883855834}
+  - component: {fileID: 1883855837}
   m_Layer: 5
   m_Name: Step2
   m_TagString: Untagged
@@ -8871,74 +8678,6 @@ RectTransform:
   m_AnchoredPosition: {x: -266.7103, y: 0}
   m_SizeDelta: {x: -533.4208, y: -0.0001}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1883855834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883855832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dd806b01d8892b47a627987ec801d76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _completionButton: {fileID: 412069806}
-  OnStepStart:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStepFinish:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1883855832}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 658530390}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 412069806}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 412069806}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _isFinalStep: 0
 --- !u!114 &1883855835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8977,6 +8716,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1883855832}
   m_CullTransparentMesh: 1
+--- !u!114 &1883855837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883855832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65a02714563aa64990bcf7a17f14f8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Outsiders.SimpleTutorial.TutorialStep
+  _completionButton: {fileID: 412069806}
+  OnStepStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnStepFinish:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1883855832}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 658530390}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1896154147
 GameObject:
   m_ObjectHideFlags: 0
@@ -10238,6 +10020,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2415013562856754586, guid: a8f4d329ae4956244886be4c7ae8b434, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2454447400076137505, guid: a8f4d329ae4956244886be4c7ae8b434, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -10253,6 +10039,14 @@ PrefabInstance:
     - target: {fileID: 2454447400076137505, guid: a8f4d329ae4956244886be4c7ae8b434, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2644554716825891120, guid: a8f4d329ae4956244886be4c7ae8b434, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4858026660374633003, guid: a8f4d329ae4956244886be4c7ae8b434, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4870360778250278409, guid: a8f4d329ae4956244886be4c7ae8b434, type: 3}
       propertyPath: m_AnchorMax.y
@@ -10318,7 +10112,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8110233570998226711, guid: a8f4d329ae4956244886be4c7ae8b434, type: 3}
+    - {fileID: 3169975374161843694, guid: a8f4d329ae4956244886be4c7ae8b434, type: 3}
+    - {fileID: 2415013562856754586, guid: a8f4d329ae4956244886be4c7ae8b434, type: 3}
+    - {fileID: 4151495196315341396, guid: a8f4d329ae4956244886be4c7ae8b434, type: 3}
+    - {fileID: 5539106582885322461, guid: a8f4d329ae4956244886be4c7ae8b434, type: 3}
+    - {fileID: 2644554716825891120, guid: a8f4d329ae4956244886be4c7ae8b434, type: 3}
+    - {fileID: 3194287811715512107, guid: a8f4d329ae4956244886be4c7ae8b434, type: 3}
+    - {fileID: 4858026660374633003, guid: a8f4d329ae4956244886be4c7ae8b434, type: 3}
+    - {fileID: 3450535845246706971, guid: a8f4d329ae4956244886be4c7ae8b434, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
