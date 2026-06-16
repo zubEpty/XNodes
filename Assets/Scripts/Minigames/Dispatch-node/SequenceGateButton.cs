@@ -10,6 +10,7 @@ namespace Dispatch.Gameplay
 public class SequenceGateButton : MonoBehaviour
 {
     public event Action<SequenceGateButton> OnPressed;
+    public event Action<SequenceGateButton> OnExitPressed;
 
     public SequenceUnlockGate gate;
     public ButtonAction action;
@@ -203,6 +204,7 @@ public class SequenceGateButton : MonoBehaviour
     private void HandleExitButtonPressed()
     {
         ResumeGameplayForSequenceUi();
+        OnExitPressed?.Invoke(this);
     }
 
     private void PauseGameplayForSequenceUi()

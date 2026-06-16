@@ -268,8 +268,6 @@ GameObject:
   - component: {fileID: 58419556}
   - component: {fileID: 58419555}
   - component: {fileID: 58419559}
-  - component: {fileID: 58419558}
-  - component: {fileID: 58419557}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -396,66 +394,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58419552}
   m_CullTransparentMesh: 1
---- !u!114 &58419557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 58419552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Components.LocalizeStringEvent
-  m_StringReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:413e0cf8c3bab4f4481aced08555507f
-    m_TableEntryReference:
-      m_KeyId: 35797327872
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  m_FormatArguments: []
-  m_UpdateString:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 58419559}
-        m_TargetAssemblyTypeName: BanglaText.HBTextMeshPro, BanglaText
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  references:
-    version: 2
-    RefIds: []
---- !u!114 &58419558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 58419552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4f87874d174dadbdeff61c8bf33feb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: BanglaText::BanglaText.HBLocalizeFontEvent
-  fontAssetReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:cbeb82abbde5b2d4a9566a180e1e62c2
-    m_TableEntryReference:
-      m_KeyId: 7164772352
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
 --- !u!114 &58419559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1054,8 +992,6 @@ GameObject:
   - component: {fileID: 259221754}
   - component: {fileID: 259221753}
   - component: {fileID: 259221757}
-  - component: {fileID: 259221756}
-  - component: {fileID: 259221755}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1182,66 +1118,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259221751}
   m_CullTransparentMesh: 1
---- !u!114 &259221755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 259221751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Components.LocalizeStringEvent
-  m_StringReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:413e0cf8c3bab4f4481aced08555507f
-    m_TableEntryReference:
-      m_KeyId: 73734807552
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  m_FormatArguments: []
-  m_UpdateString:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 259221757}
-        m_TargetAssemblyTypeName: BanglaText.HBTextMeshPro, BanglaText
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  references:
-    version: 2
-    RefIds: []
---- !u!114 &259221756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 259221751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4f87874d174dadbdeff61c8bf33feb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: BanglaText::BanglaText.HBLocalizeFontEvent
-  fontAssetReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:cbeb82abbde5b2d4a9566a180e1e62c2
-    m_TableEntryReference:
-      m_KeyId: 7164772352
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
 --- !u!114 &259221757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1431,7 +1307,6 @@ GameObject:
   - component: {fileID: 271124719}
   - component: {fileID: 271124721}
   - component: {fileID: 271124720}
-  - component: {fileID: 271124722}
   m_Layer: 5
   m_Name: Step1
   m_TagString: Untagged
@@ -1499,86 +1374,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 271124718}
   m_CullTransparentMesh: 1
---- !u!114 &271124722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 271124718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dd806b01d8892b47a627987ec801d76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _completionButton: {fileID: 0}
-  OnStepStart:
-    m_PersistentCalls:
-      m_Calls: []
-  OnStepFinish:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 271124718}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1883855832}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1099241047}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-        m_MethodName: set_raycastTarget
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1099241047}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-        m_MethodName: set_raycastTarget
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1007164377}
-        m_TargetAssemblyTypeName: Dispatch.Gameplay.DispatchNodeTutorialFlow, Assembly-CSharp
-        m_MethodName: RestrictPlayerMove
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  _isFinalStep: 0
 --- !u!1 &332577772
 GameObject:
   m_ObjectHideFlags: 0
@@ -2938,7 +2733,7 @@ MonoBehaviour:
   OnStepFinish:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1007164377}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Dispatch.Gameplay.DispatchNodeTutorialFlow, Assembly-CSharp
         m_MethodName: RestrictPlayerMove
         m_Mode: 6
@@ -3310,8 +3105,6 @@ GameObject:
   - component: {fileID: 706000889}
   - component: {fileID: 706000888}
   - component: {fileID: 706000892}
-  - component: {fileID: 706000891}
-  - component: {fileID: 706000890}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -3438,66 +3231,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706000886}
   m_CullTransparentMesh: 1
---- !u!114 &706000890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706000886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Components.LocalizeStringEvent
-  m_StringReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:413e0cf8c3bab4f4481aced08555507f
-    m_TableEntryReference:
-      m_KeyId: 103413702656
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  m_FormatArguments: []
-  m_UpdateString:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 706000892}
-        m_TargetAssemblyTypeName: BanglaText.HBTextMeshPro, BanglaText
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  references:
-    version: 2
-    RefIds: []
---- !u!114 &706000891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706000886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4f87874d174dadbdeff61c8bf33feb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: BanglaText::BanglaText.HBLocalizeFontEvent
-  fontAssetReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:cbeb82abbde5b2d4a9566a180e1e62c2
-    m_TableEntryReference:
-      m_KeyId: 7164772352
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
 --- !u!114 &706000892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4378,20 +4111,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1007164374}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 232a54ae5b3e4a32ba0eca9bff5b4889, type: 3}
+  m_Script: {fileID: 11500000, guid: f22a76a2e29a99444a4b27d34f4c164a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dispatch.Gameplay.DispatchNodeTutorialFlow
-  swipeToLockedNodeStep: {fileID: 271124722}
-  tapGateButtonStep: {fileID: 1883855834}
-  passwordNeedsKeyStep: {fileID: 658530392}
-  collectKeyStep: {fileID: 640807981}
-  memorizePatternStep: {fileID: 640807981}
-  finishGameStep: {fileID: 640807981}
+  swipeToLockedNodeStep: {fileID: 0}
+  tapGateButtonStep: {fileID: 0}
+  passwordNeedsKeyStep: {fileID: 0}
+  exitAndMoveToKeyStep: {fileID: 0}
+  collectKeyStep: {fileID: 0}
+  memorizePatternStep: {fileID: 0}
+  finishGameStep: {fileID: 0}
   player: {fileID: 0}
-  lockedNode: {fileID: 0}
+  lockedNode: {fileID: 1043220337}
   sequenceGate: {fileID: 1719949972}
   revealSequenceButton: {fileID: 1293244411}
   beginEntryButton: {fileID: 412069810}
+  keyIconButton: {fileID: 1293244411}
+  keyNode: {fileID: 1527366779}
   keyPickup: {fileID: 0}
   goalNode: {fileID: 0}
   completeSwipeStepOnAnyMove: 0
@@ -6278,8 +6014,6 @@ GameObject:
   - component: {fileID: 1407007155}
   - component: {fileID: 1407007154}
   - component: {fileID: 1407007158}
-  - component: {fileID: 1407007157}
-  - component: {fileID: 1407007156}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -6326,7 +6060,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Swipe to move the ball
+  m_text: Press WASD to move the ball
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 64a0343bcec42824990875a81fb92220, type: 2}
   m_sharedMaterial: {fileID: 3470138677916310620, guid: 64a0343bcec42824990875a81fb92220, type: 2}
@@ -6406,66 +6140,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407007152}
   m_CullTransparentMesh: 1
---- !u!114 &1407007156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407007152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Components.LocalizeStringEvent
-  m_StringReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:413e0cf8c3bab4f4481aced08555507f
-    m_TableEntryReference:
-      m_KeyId: 5124382720
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  m_FormatArguments: []
-  m_UpdateString:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1407007158}
-        m_TargetAssemblyTypeName: BanglaText.HBTextMeshPro, BanglaText
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  references:
-    version: 2
-    RefIds: []
---- !u!114 &1407007157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407007152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4f87874d174dadbdeff61c8bf33feb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: BanglaText::BanglaText.HBLocalizeFontEvent
-  fontAssetReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:cbeb82abbde5b2d4a9566a180e1e62c2
-    m_TableEntryReference:
-      m_KeyId: 7164772352
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
 --- !u!114 &1407007158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6863,8 +6537,6 @@ GameObject:
   - component: {fileID: 1489731160}
   - component: {fileID: 1489731159}
   - component: {fileID: 1489731163}
-  - component: {fileID: 1489731162}
-  - component: {fileID: 1489731161}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -6991,66 +6663,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1489731157}
   m_CullTransparentMesh: 1
---- !u!114 &1489731161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1489731157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Components.LocalizeStringEvent
-  m_StringReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:413e0cf8c3bab4f4481aced08555507f
-    m_TableEntryReference:
-      m_KeyId: 170241548288
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  m_FormatArguments: []
-  m_UpdateString:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1489731163}
-        m_TargetAssemblyTypeName: BanglaText.HBTextMeshPro, BanglaText
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  references:
-    version: 2
-    RefIds: []
---- !u!114 &1489731162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1489731157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4f87874d174dadbdeff61c8bf33feb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: BanglaText::BanglaText.HBLocalizeFontEvent
-  fontAssetReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:cbeb82abbde5b2d4a9566a180e1e62c2
-    m_TableEntryReference:
-      m_KeyId: 7164772352
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
 --- !u!114 &1489731163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8921,7 +8533,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1007164377}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Dispatch.Gameplay.DispatchNodeTutorialFlow, Assembly-CSharp
         m_MethodName: RestrictPlayerMove
         m_Mode: 6
@@ -10673,7 +10285,7 @@ PrefabInstance:
     - target: {fileID: 5929312054980886213, guid: a8f4d329ae4956244886be4c7ae8b434, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1007164377}
+      objectReference: {fileID: 0}
     - target: {fileID: 5929312054980886213, guid: a8f4d329ae4956244886be4c7ae8b434, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2

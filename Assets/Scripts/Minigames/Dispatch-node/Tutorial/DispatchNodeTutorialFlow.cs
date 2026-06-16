@@ -10,6 +10,7 @@ public class DispatchNodeTutorialFlow : MonoBehaviour
     [SerializeField] private TutorialStep swipeToLockedNodeStep;
     [SerializeField] private TutorialStep tapGateButtonStep;
     [SerializeField] private TutorialStep passwordNeedsKeyStep;
+    [SerializeField] private TutorialStep exitAndMoveToKeyStep;
     [SerializeField] private TutorialStep collectKeyStep;
     [SerializeField] private TutorialStep memorizePatternStep;
     [SerializeField] private TutorialStep finishGameStep;
@@ -20,6 +21,8 @@ public class DispatchNodeTutorialFlow : MonoBehaviour
     [SerializeField] private SequenceUnlockGate sequenceGate;
     [SerializeField] private SequenceGateButton revealSequenceButton;
     [SerializeField] private SequenceGateButton beginEntryButton;
+    [SerializeField] private SequenceGateButton keyIconButton;
+    [SerializeField] private PathNode keyNode;
     [SerializeField] private KeyPickupNodeInteraction keyPickup;
     [SerializeField] private GoalNodeInteraction goalNode;
 
@@ -31,6 +34,8 @@ public class DispatchNodeTutorialFlow : MonoBehaviour
     [SerializeField, Min(0f)] private float passwordNeedsKeyAutoCompleteDelay;
 
     private Coroutine passwordAutoCompleteRoutine;
+    private bool lockExitPressed;
+    private PlayerController subscribedPlayer;
 
     void Awake()
     {
@@ -41,8 +46,7 @@ public class DispatchNodeTutorialFlow : MonoBehaviour
     {
         ResolveReferences();
 
-        if (player != null)
-            player.OnCurrentNodeChanged += HandleCurrentNodeChanged;
+        TryBindPlayer();
 
         if (sequenceGate != null)
         {
@@ -60,7 +64,13 @@ public class DispatchNodeTutorialFlow : MonoBehaviour
             revealSequenceButton.OnPressed += HandleGateButtonPressed;
 
         if (beginEntryButton != null)
+        {
             beginEntryButton.OnPressed += HandleGateButtonPressed;
+            beginEntryButton.OnExitPressed += HandleLockExitPressed;
+        }
+
+        if (keyIconButton != null && keyIconButton != revealSequenceButton && keyIconButton != beginEntryButton)
+            keyIconButton.OnPressed += HandleGateButtonPressed;
 
         if (keyPickup != null)
             keyPickup.OnKeyCollected += HandleKeyCollected;
@@ -74,14 +84,18 @@ public class DispatchNodeTutorialFlow : MonoBehaviour
 
     void Start()
     {
-        if (player != null && ShouldCompleteSwipeStep(player.currentNode))
-            TryCompleteStep(swipeToLockedNodeStep);
+        TryBindPlayer();
+    }
+
+    void Update()
+    {
+        if (subscribedPlayer == null)
+            TryBindPlayer();
     }
 
     void OnDisable()
     {
-        if (player != null)
-            player.OnCurrentNodeChanged -= HandleCurrentNodeChanged;
+        UnbindPlayer();
 
         if (sequenceGate != null)
         {
@@ -99,7 +113,13 @@ public class DispatchNodeTutorialFlow : MonoBehaviour
             revealSequenceButton.OnPressed -= HandleGateButtonPressed;
 
         if (beginEntryButton != null)
+        {
             beginEntryButton.OnPressed -= HandleGateButtonPressed;
+            beginEntryButton.OnExitPressed -= HandleLockExitPressed;
+        }
+
+        if (keyIconButton != null && keyIconButton != revealSequenceButton && keyIconButton != beginEntryButton)
+            keyIconButton.OnPressed -= HandleGateButtonPressed;
 
         if (keyPickup != null)
             keyPickup.OnKeyCollected -= HandleKeyCollected;
@@ -114,14 +134,18 @@ public class DispatchNodeTutorialFlow : MonoBehaviour
     }
 
     public void RestrictPlayerMove(bool shouldRestrict)
-        {
+    {
+        if (player != null)
             player.SetGameplayControlEnabled(!shouldRestrict);
-        }
+    }
 
     private void HandleCurrentNodeChanged(PathNode previousNode, PathNode currentNode)
     {
         if (ShouldCompleteSwipeStep(currentNode))
             TryCompleteStep(swipeToLockedNodeStep);
+
+        if (ShouldShowCollectKeyStep(currentNode))
+            ActivateStep(collectKeyStep);
     }
 
     private bool ShouldCompleteSwipeStep(PathNode currentNode)
@@ -162,6 +186,22 @@ public class DispatchNodeTutorialFlow : MonoBehaviour
 
         if (button == beginEntryButton && completePasswordStepOnBeginEntryPress)
             TryCompleteStep(passwordNeedsKeyStep);
+
+        if (button == keyIconButton || (button == revealSequenceButton && revealSequenceButton == keyIconButton))
+            TryCompleteStep(collectKeyStep);
+    }
+
+    private void HandleLockExitPressed(SequenceGateButton button)
+    {
+        lockExitPressed = true;
+
+        if (IsStepActive(exitAndMoveToKeyStep))
+            exitAndMoveToKeyStep.Deactivate();
+
+        RestrictPlayerMove(false);
+
+        if (ShouldShowCollectKeyStep(player != null ? player.currentNode : null))
+            ActivateStep(collectKeyStep);
     }
 
     private void HandleKeyCollected(PlayerController collectingPlayer, string keyCode)
@@ -224,6 +264,44 @@ public class DispatchNodeTutorialFlow : MonoBehaviour
         return step != null && step.gameObject.activeInHierarchy;
     }
 
+    private void ActivateStep(TutorialStep step)
+    {
+        if (step == null || step.gameObject.activeInHierarchy)
+            return;
+
+        step.Activate();
+    }
+
+    private bool ShouldShowCollectKeyStep(PathNode currentNode)
+    {
+        if (!lockExitPressed || currentNode == null || collectKeyStep == null)
+            return false;
+
+        return keyNode != null && currentNode == keyNode;
+    }
+
+    private void TryBindPlayer()
+    {
+        ResolveReferences();
+
+        if (player == null || subscribedPlayer == player)
+            return;
+
+        UnbindPlayer();
+        subscribedPlayer = player;
+        subscribedPlayer.OnCurrentNodeChanged += HandleCurrentNodeChanged;
+        HandleCurrentNodeChanged(null, subscribedPlayer.currentNode);
+    }
+
+    private void UnbindPlayer()
+    {
+        if (subscribedPlayer == null)
+            return;
+
+        subscribedPlayer.OnCurrentNodeChanged -= HandleCurrentNodeChanged;
+        subscribedPlayer = null;
+    }
+
     private void ResolveReferences()
     {
         if (sequenceGate == null)
@@ -249,6 +327,28 @@ public class DispatchNodeTutorialFlow : MonoBehaviour
 
         if (goalNode == null)
             goalNode = FindFirstObjectByType<GoalNodeInteraction>();
+
+        if (keyIconButton == null)
+            keyIconButton = revealSequenceButton;
+
+        if (keyNode == null && keyIconButton != null)
+            keyNode = keyIconButton.requiredNode;
+
+        if (exitAndMoveToKeyStep == null)
+            exitAndMoveToKeyStep = FindTutorialStepByName("Step4");
+    }
+
+    private TutorialStep FindTutorialStepByName(string stepName)
+    {
+        TutorialStep[] tutorialSteps = FindObjectsByType<TutorialStep>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        for (int i = 0; i < tutorialSteps.Length; i++)
+        {
+            TutorialStep step = tutorialSteps[i];
+            if (step != null && step.gameObject.name == stepName)
+                return step;
+        }
+
+        return null;
     }
 }
 }
