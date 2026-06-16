@@ -15,6 +15,7 @@ public class SequenceGateButton : MonoBehaviour
     public SequenceUnlockGate gate;
     public ButtonAction action;
     public bool requirePlayerOnNode = true;
+    public bool costsBatteryStamina = true;
     public PathNode requiredNode;
     public Button targetButton;
     public CanvasGroup targetCanvasGroup;
@@ -82,6 +83,9 @@ public class SequenceGateButton : MonoBehaviour
         if (!CanPress(true))
             return;
 
+        if (!TrySpendBatteryStamina())
+            return;
+
         if (showSequenceRootOnPress && action != ButtonAction.CancelSequenceEntry)
             SetSequenceRootActive(true);
 
@@ -145,7 +149,7 @@ public class SequenceGateButton : MonoBehaviour
             TryResolveGate();
 
         if (!requirePlayerOnNode)
-            return true;
+            return CanSpendBatteryStamina();
 
         if (gate == null || gate.player == null)
         {
@@ -166,7 +170,38 @@ public class SequenceGateButton : MonoBehaviour
             return false;
         }
 
-        return true;
+        return CanSpendBatteryStamina();
+    }
+
+    private bool TrySpendBatteryStamina()
+    {
+        if (!costsBatteryStamina)
+            return true;
+
+        DispatchBatteryStamina battery = DispatchBatteryStamina.Instance;
+        if (battery == null)
+            battery = FindFirstObjectByType<DispatchBatteryStamina>();
+
+        if (battery == null)
+            return true;
+
+        bool spent = battery.TrySpendForAction();
+        if (!spent)
+            Debug.Log("Not enough battery stamina to use this button.");
+
+        return spent;
+    }
+
+    private bool CanSpendBatteryStamina()
+    {
+        if (!costsBatteryStamina)
+            return true;
+
+        DispatchBatteryStamina battery = DispatchBatteryStamina.Instance;
+        if (battery == null)
+            battery = FindFirstObjectByType<DispatchBatteryStamina>();
+
+        return battery == null || battery.CanSpendForAction();
     }
 
     private void TryResolveGate()

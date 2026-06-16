@@ -36,6 +36,7 @@ public class DispatchLevel : MonoBehaviour
         BindPresenceVisibility(bootstrap);
         BindGoalNodes();
         BindTapPromptJuice();
+        BindBatteryStamina();
 
         if (bootstrap.player != null)
         {
@@ -126,6 +127,22 @@ public class DispatchLevel : MonoBehaviour
             binder = gameObject.AddComponent<DispatchTapPromptJuiceBinder>();
 
         binder.Bind(this);
+    }
+
+    private void BindBatteryStamina()
+    {
+        DispatchBatteryStamina battery = DispatchBatteryStamina.Instance;
+        if (battery == null)
+            battery = FindFirstObjectByType<DispatchBatteryStamina>();
+
+        if (battery == null)
+            return;
+
+        DispatchNodeLevelData levelData = DispatchLevelManager.Instance != null
+            ? DispatchLevelManager.Instance.CurrentLevelData
+            : null;
+
+        battery.InitializeFromLevelData(levelData);
     }
 }
 }

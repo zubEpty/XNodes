@@ -23,11 +23,15 @@ public class DispatchNodeLevelData : ScriptableObject
     [SerializeField] private bool useTimer = true;
     [SerializeField, Min(0f)] private float timerDurationSeconds = 165f;
 
+    [Header("Battery Stamina")]
+    [SerializeField, Min(0)] private int startingBatteryCharges = 3;
+
     public string LevelId => levelId;
     public string DisplayName => displayName;
     public string LevelSceneName => levelSceneName;
     public bool UseTimer => useTimer;
     public float TimerDurationSeconds => timerDurationSeconds;
+    public int StartingBatteryCharges => startingBatteryCharges;
     public bool HasScene => !string.IsNullOrEmpty(levelSceneName);
 
 #if UNITY_EDITOR

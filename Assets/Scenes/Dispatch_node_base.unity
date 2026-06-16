@@ -1248,6 +1248,7 @@ GameObject:
   - component: {fileID: 320315672}
   - component: {fileID: 320315674}
   - component: {fileID: 320315673}
+  - component: {fileID: 320315675}
   m_Layer: 5
   m_Name: BatteryStamina
   m_TagString: Untagged
@@ -1313,6 +1314,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320315671}
   m_CullTransparentMesh: 1
+--- !u!114 &320315675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320315671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc525f3bc5f44eb8bfadfc98f692331, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Dispatch.Gameplay.DispatchBatteryStamina
+  maxCharges: 3
+  startingCharges: 3
+  reservedGoalCharges: 0
+  powerContainer: {fileID: 1940499099}
+  powerObjects:
+  - {fileID: 790317902}
+  - {fileID: 262491738}
+  - {fileID: 826349225}
 --- !u!1 &353252184
 GameObject:
   m_ObjectHideFlags: 0
