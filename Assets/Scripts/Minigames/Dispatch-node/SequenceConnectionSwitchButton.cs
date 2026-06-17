@@ -10,6 +10,7 @@ public class SequenceConnectionSwitchButton : MonoBehaviour
     public SequenceConnectionSwitch sequenceSwitch;
     public ButtonAction action;
     public bool requirePlayerOnNode = true;
+    public bool costsBatteryStamina = true;
     public PathNode requiredNode;
     public Button targetButton;
     public CanvasGroup targetCanvasGroup;
@@ -75,6 +76,9 @@ public class SequenceConnectionSwitchButton : MonoBehaviour
         }
 
         if (!CanPress(true))
+            return;
+
+        if (!TrySpendBatteryStamina())
             return;
 
         if (showSequenceRootOnPress && action == ButtonAction.BeginSequenceEntry)
@@ -143,7 +147,7 @@ public class SequenceConnectionSwitchButton : MonoBehaviour
             sequenceSwitch.ResolveRuntimeReferences();
 
         if (!requirePlayerOnNode)
-            return true;
+            return CanSpendBatteryStamina();
 
         if (sequenceSwitch == null || sequenceSwitch.player == null)
         {
@@ -164,7 +168,38 @@ public class SequenceConnectionSwitchButton : MonoBehaviour
             return false;
         }
 
-        return true;
+        return CanSpendBatteryStamina();
+    }
+
+    private bool TrySpendBatteryStamina()
+    {
+        if (!costsBatteryStamina)
+            return true;
+
+        DispatchBatteryStamina battery = DispatchBatteryStamina.Instance;
+        if (battery == null)
+            battery = FindFirstObjectByType<DispatchBatteryStamina>();
+
+        if (battery == null)
+            return true;
+
+        bool spent = battery.TrySpendForAction();
+        if (!spent)
+            Debug.Log("Not enough battery stamina to use this button.");
+
+        return spent;
+    }
+
+    private bool CanSpendBatteryStamina()
+    {
+        if (!costsBatteryStamina)
+            return true;
+
+        DispatchBatteryStamina battery = DispatchBatteryStamina.Instance;
+        if (battery == null)
+            battery = FindFirstObjectByType<DispatchBatteryStamina>();
+
+        return battery == null || battery.CanSpendForAction();
     }
 
     private void TryResolveSwitch()
